@@ -1,0 +1,28 @@
+
+<table>
+<tr>
+<td>ID</td>
+
+<td>CIN</td>
+<td>Name</td>
+<td>Type</td>
+<td>CV</td>
+<td>Created Date</td>
+</tr>
+
+<tbody>
+<tr *ngFor="let element of dataSource">
+<td>{{element.id}}</td>
+<td>{{element.cin}}</td>
+<td>{{element.name}}</td>
+<td>{{element.type}}</td>
+<td>{{element.cv}}</td>
+<td>{{element.createdDate}}</td>
+
+
+</tr>
+    
+</tbody>
+
+
+</table>
