@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+  }
+  /* Your component's CSS file or within your component's HTML file */
+
+.custom-button {
+    background-color: blue;
+    color: white; /* Text color */
+  }
+  
+  .custom-button:hover {
+    background-color: darkblue; /* Change color on hover */
+  }
+  
