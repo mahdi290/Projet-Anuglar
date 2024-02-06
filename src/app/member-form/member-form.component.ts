@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MemberService } from '../service/member.service';
 
 @Component({
   selector: 'app-member-form',
@@ -8,6 +9,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class MemberFormComponent implements OnInit {
 
+
+  constructor(private MS:MemberService){
+
+
+
+  }
   form!:FormGroup 
   ngOnInit():void{
     this.initForm();
@@ -30,7 +37,9 @@ this .form=new FormGroup({
     const MemberToSave=
     this.form.value;
 
-    //declancher l'envoie de requette http en mode post au bakcned
+    //appeler la fonction du service OnSave(MemberToSave) l'envoie de requette http en mode post au bakcned
+
+  //this.Ms.OnSave()
 
 
 
