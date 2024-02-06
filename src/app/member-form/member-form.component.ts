@@ -27,5 +27,12 @@ this .form=new FormGroup({
   onsub():void{
     //recuperation des donnes a partir du html 
     console.log(this.form.value);
-  }
-}
+    const MemberToSave=
+    this.form.value;
+
+    //declancher l'envoie de requette http en mode post au bakcned
+
+
+
+  
+  }}

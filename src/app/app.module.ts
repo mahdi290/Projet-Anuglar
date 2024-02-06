@@ -13,19 +13,19 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
     MemberComponent,
     MemberFormComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTableModule  ,MatIconModule, FlexLayoutModule,MatFormFieldModule,MatInputModule,ReactiveFormsModule,FormsModule, BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule  ,MatIconModule, FlexLayoutModule,MatFormFieldModule,MatInputModule,ReactiveFormsModule,FormsModule, 
     
   ],
   providers: [],
