@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="onsub()">
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Cin</mat-label>
+        <input matInput placeholder="Enter your Cin" formControlName="cin">
+        <mat-hint>Example: 12345678</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter your Name" formControlName="name">
+        <mat-hint>Example: John Doe</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>CV</mat-label>
+        <input matInput placeholder="Enter your cv" formControlName="cv">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>type</mat-label>
+        <input matInput placeholder="Enter your type" formControlName="types">
+      </mat-form-field>
+    </p>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+  
